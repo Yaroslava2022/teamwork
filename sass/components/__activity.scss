@@ -1,0 +1,52 @@
+.activity {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  padding-top: 0;
+
+  &__list {
+    @extend %list;
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  ;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.overlay__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
